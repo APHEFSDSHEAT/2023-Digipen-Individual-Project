@@ -41,6 +41,11 @@ public class Slingshot : MonoBehaviour
         bird = Instantiate(birdPrefab).GetComponent<Rigidbody2D>();
         birdCollider = bird.GetComponent<Collider2D>();
         birdCollider.enabled = false;
+
+        bird.isKinematic = true;
+
+        ResetStrips();
+
     }
 
 
@@ -59,6 +64,11 @@ public class Slingshot : MonoBehaviour
             currentPosition = ClampBoundary(currentPosition);
 
             SetStrips(currentPosition);
+
+            if (birdCollider)
+            {
+                birdCollider.enabled = true;
+            }
         }
         else
         {
@@ -79,7 +89,18 @@ public class Slingshot : MonoBehaviour
 
     void Shoot()
     {
+        bird.isKinematic = false;
+        Vector3 birdForce = (currentPosition - centre.position) * force * -1;
+        bird.velocity = birdForce;
 
+        bird = null;
+        birdCollider = null;
+        Invoke("CreateBird", 2 );
+
+        if (birdCollider)
+        {
+            birdCollider.enabled = true; 
+        }
     }
 
     void ResetStrips()

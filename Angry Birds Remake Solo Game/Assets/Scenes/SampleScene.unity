@@ -608,6 +608,7 @@ MonoBehaviour:
   bottomBoundary: -3.5
   birdPrefab: {fileID: 6275382903282484183, guid: 6e2526817f807644bb7f4be478ef8b8b, type: 3}
   birdPositionOffset: 0
+  force: 5
 --- !u!4 &1091625141
 Transform:
   m_ObjectHideFlags: 0
