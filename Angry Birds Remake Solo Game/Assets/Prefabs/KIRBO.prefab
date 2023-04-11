@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3421024716031831321}
   - component: {fileID: 3337475206093296918}
   - component: {fileID: 691941139389456515}
+  - component: {fileID: 4691981508576413394}
   m_Layer: 0
   m_Name: KIRBO
-  m_TagString: Untagged
+  m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +123,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.604
+--- !u!114 &4691981508576413394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275382903282484183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7c4311ee3e6d94b98b1d59edddfc51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BirdsInGame: 0
+  DestroyTime: 3.5

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Slingshot : MonoBehaviour
@@ -26,6 +28,7 @@ public class Slingshot : MonoBehaviour
 
     public float force;
 
+    
     void Start()
     {
         lineRenderers[0].positionCount = 2;
@@ -35,7 +38,7 @@ public class Slingshot : MonoBehaviour
 
         CreateBird();
     }
-
+    
     void CreateBird()
     {
         bird = Instantiate(birdPrefab).GetComponent<Rigidbody2D>();
@@ -45,10 +48,10 @@ public class Slingshot : MonoBehaviour
         bird.isKinematic = true;
 
         ResetStrips();
-
+        
     }
 
-
+    
     
     void Update()
     {
@@ -92,6 +95,7 @@ public class Slingshot : MonoBehaviour
         bird.isKinematic = false;
         Vector3 birdForce = (currentPosition - centre.position) * force * -1;
         bird.velocity = birdForce;
+        FindObjectOfType<ObjectCounter>().HasLaunched();
 
         bird = null;
         birdCollider = null;
