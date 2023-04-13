@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6275382903282484183
+--- !u!1 &2703739373980396482
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3220802051794623323}
-  - component: {fileID: 3421024716031831321}
-  - component: {fileID: 3337475206093296918}
-  - component: {fileID: 691941139389456515}
-  - component: {fileID: 4691981508576413394}
-  - component: {fileID: 862369066525024080}
+  - component: {fileID: 2703739373980396486}
+  - component: {fileID: 2703739373980396487}
+  - component: {fileID: 2703739373980396484}
+  - component: {fileID: 2703739373980396485}
+  - component: {fileID: 2703739373980396489}
+  - component: {fileID: 2703739373980396488}
   m_Layer: 0
-  m_Name: KIRBO
-  m_TagString: Bird
+  m_Name: Waddle Dee BnW transparent
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3220802051794623323
+--- !u!4 &2703739373980396486
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
+  m_GameObject: {fileID: 2703739373980396482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.53, y: -0.74, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 5.4491, y: -2.7648, z: 0}
+  m_LocalScale: {x: 0.33665958, y: 0.33665958, z: 0.33665958}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3421024716031831321
+--- !u!212 &2703739373980396487
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
+  m_GameObject: {fileID: 2703739373980396482}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,26 +75,57 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -6452544897212353825, guid: 9062819e801585549a363a8d7bf273d2, type: 3}
-  m_Color: {r: 1, g: 0.10518691, b: 0, a: 1}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 429532f037b872d43ab01636c18aa31b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.2, y: 3.208}
+  m_Size: {x: 5.45, y: 4.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3337475206093296918
+--- !u!114 &2703739373980396484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2703739373980396482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821e7d34d0a2acb47a512f6e9998edd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationOfExplosion: 1
+  explosionVFX: {fileID: 757001788745384297, guid: 551cde6209390334aab3861941d6e721, type: 3}
+  IsCollide: 0
+--- !u!58 &2703739373980396485
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2703739373980396482}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.725
+--- !u!50 &2703739373980396489
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
+  m_GameObject: {fileID: 2703739373980396482}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -108,46 +139,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &691941139389456515
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 4c44ba282b2525b4fb31b62f19af3070, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.604
---- !u!114 &4691981508576413394
+--- !u!114 &2703739373980396488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e7c4311ee3e6d94b98b1d59edddfc51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BirdsInGame: 0
-  DestroyTime: 3.5
---- !u!114 &862369066525024080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6275382903282484183}
+  m_GameObject: {fileID: 2703739373980396482}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e93eb5df7253015449c6abe4d80d4837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 10
