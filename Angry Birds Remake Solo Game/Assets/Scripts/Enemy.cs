@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
 
     public bool IsCollide = false;
 
+    public int points = 10;
+
     void Update()
     {
         IfDead();
@@ -28,6 +30,7 @@ public class Enemy : MonoBehaviour
     {
         if (IsCollide == true)
         {
+            Score.instance.AddPoint(points);
             GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
             Destroy(explosion, durationOfExplosion);
             Destroy(gameObject);
