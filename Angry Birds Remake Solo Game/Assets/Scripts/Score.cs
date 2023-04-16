@@ -26,7 +26,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         highscore = PlayerPrefs.GetInt("highscore", 0); //starts saving of highscore
-        scoreText.text = "Score " + score.ToString();
+        scoreText.text = "Score: " + score.ToString();
         highscoreText.text = "Highscore: " + highscore.ToString(); 
     }
     
@@ -41,7 +41,7 @@ public class Score : MonoBehaviour
         score = score + pointValue;
         scoreText.text = score.ToString();
         //score += 1;
-        scoreText.text = "Score " + score.ToString();
+        scoreText.text = "Score: " + score.ToString();
         if (highscore < score)
         {
             PlayerPrefs.SetInt("highscore", score); //this is saving the highscore in player storage (PlayerPrefs)
