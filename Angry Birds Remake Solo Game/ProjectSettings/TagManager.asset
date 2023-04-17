@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bird
   - Enemy
+  - Breakable
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Breakable
+  - DontBreak
   - 
   - 
   - 

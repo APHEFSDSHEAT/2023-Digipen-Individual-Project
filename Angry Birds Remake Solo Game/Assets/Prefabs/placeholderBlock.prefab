@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8531614634103362585}
   - component: {fileID: 4151602737410332386}
   - component: {fileID: 5679216986564969885}
+  - component: {fileID: 1521372910}
+  - component: {fileID: 1521372907}
   m_Layer: 0
   m_Name: placeholderBlock
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +112,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 2.07}
   m_EdgeRadius: 0
+--- !u!50 &1521372910
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7682905783214941083}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1521372907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7682905783214941083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bbf3da3f8f17e4cab253110a449027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockDestroyVFX: {fileID: 757001788745384297, guid: 551cde6209390334aab3861941d6e721, type: 3}
+  blockHitSprites:
+  - {fileID: 21300000, guid: fdf77113eef0f8c4a8af8de5891df0cf, type: 3}
+  points: 5
