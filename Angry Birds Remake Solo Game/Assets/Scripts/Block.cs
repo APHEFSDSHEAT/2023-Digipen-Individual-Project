@@ -24,7 +24,7 @@ public class Block : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision) //will making it OnTriggerEnter2D work? (maybe im missing something, no work
     {
-        if (tag == "Breakable") // objects colliding with "Breakable" will trigger ShowNextHitSprite() and eventually DestroyBlock()
+        if (collision.gameObject.tag == "Bird" /*tag == "Breakable"*/) // objects colliding with "Breakable" will trigger ShowNextHitSprite() and eventually DestroyBlock()
         {
             timesHit++;
             int maxHits = blockHitSprites.Length + 1;

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks;
+    [SerializeField] float delayInSeconds = 1.5f;
 
     public void CountBreakableBlocks()
     {
@@ -18,9 +20,21 @@ public class Level : MonoBehaviour
         breakableBlocks--;
         if (breakableBlocks <= 0)
         {
-            FindObjectOfType<SceneLoader>().LoadNextScene();
+            LoadGameOver();
+            //FindObjectOfType<SceneLoader>().LoadNextScene();
         }
     }
+    public void LoadGameOver()
+    {
+        StartCoroutine(WaitAndLoad());
+    }
+
+    private IEnumerator WaitAndLoad() // MAKE THIS HAPPEN WHEN ENEMY ARE GONE NOT BLOCKS
+    {
+        yield return new WaitForSeconds(delayInSeconds); 
+        SceneManager.LoadScene(1);
+    }
+
 
     // Start is called before the first frame update
     void Start()
