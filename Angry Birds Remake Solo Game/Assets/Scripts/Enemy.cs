@@ -8,9 +8,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] GameObject explosionVFX;
 
+    Level levelScript;
+
     public bool IsCollide = false;
 
     public int points = 10;
+    //[SerializeField] int scoreValue = 10;
+
+    private void Start()
+    {
+        levelScript = FindObjectOfType<Level>();
+        if (tag == "Enemy")
+        {
+            levelScript.CountEnemies();
+        }
+    }
 
     void Update()
     {
@@ -30,10 +42,12 @@ public class Enemy : MonoBehaviour
     {
         if (IsCollide == true)
         {
+            //FindObjectOfType<GameSessions>().AddToScore(scoreValue);
             Score.instance.AddPoint(points);
             GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
             Destroy(explosion, durationOfExplosion);
             Destroy(gameObject);
+            levelScript.enemyDied();
         }
     }
 }

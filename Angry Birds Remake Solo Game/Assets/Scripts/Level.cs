@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
+    [SerializeField] int numberOfEnemies;
     [SerializeField] int breakableBlocks;
-    [SerializeField] float delayInSeconds = 1.5f;
+    [SerializeField] float delayInSeconds = 3.5f;
 
     public void CountBreakableBlocks()
     {
@@ -15,24 +16,40 @@ public class Level : MonoBehaviour
         //breakableBlocks += 1;
         //breakableBlocks++;
     }
-    public void blockDestroyed()
+    public void CountEnemies()
     {
-        breakableBlocks--;
-        if (breakableBlocks <= 0)
+        numberOfEnemies = numberOfEnemies + 1;
+    }
+
+    public void enemyDied()
+    {
+        numberOfEnemies--;
+        if (numberOfEnemies <= 0)
         {
-            LoadGameOver();
+            LoadTheNextScene();
             //FindObjectOfType<SceneLoader>().LoadNextScene();
         }
     }
-    public void LoadGameOver()
+    public void blockDestroyed()
+    {
+        breakableBlocks--;
+        /*if (breakableBlocks <= 0)
+        {
+            LoadGameOver();
+            FindObjectOfType<SceneLoader>().LoadNextScene();
+        }*/
+    }
+    public void LoadTheNextScene()
     {
         StartCoroutine(WaitAndLoad());
     }
 
     private IEnumerator WaitAndLoad() // MAKE THIS HAPPEN WHEN ENEMY ARE GONE NOT BLOCKS
     {
-        yield return new WaitForSeconds(delayInSeconds); 
-        SceneManager.LoadScene(1);
+        yield return new WaitForSeconds(delayInSeconds);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+        //SceneManager.LoadScene(1);
     }
 
 
