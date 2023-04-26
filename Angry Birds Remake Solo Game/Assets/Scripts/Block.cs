@@ -10,7 +10,8 @@ public class Block : MonoBehaviour
 
     Level levelScript;
 
-    public int points = 5;
+    //public int points = 5;
+    [SerializeField] int scoreValue = 10;
 
     // Start is called before the first frame update
     private void Start()
@@ -48,8 +49,8 @@ public class Block : MonoBehaviour
     private void DestroyBlock()
     {
         //the line below is trying to find the script
-        Score.instance.AddPoint(points);
-        //FindObjectOfType<Score>().AddPoint();
+        //Score.instance.AddPoint(points);
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         levelScript.blockDestroyed();
         TriggerBlockBreakVFX();
         // Destroy yourself

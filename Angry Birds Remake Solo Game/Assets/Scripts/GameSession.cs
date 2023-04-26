@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 
-public class GameSessions : MonoBehaviour
+public class GameSession : MonoBehaviour
 {
-    int score = 0;
+    public int score = 0;
 
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class GameSessions : MonoBehaviour
 
     private void SetupSingleton()
     {
-        if (FindObjectsOfType<GameSessions>().Length > 1)
+        if(FindObjectsOfType<GameSession>().Length > 1)
         {
             Destroy(gameObject);
         }

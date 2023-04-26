@@ -10,14 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2703739373980396486}
   - component: {fileID: 2703739373980396487}
-  - component: {fileID: 2703739373980396484}
   - component: {fileID: 2703739373980396489}
   - component: {fileID: 2703739373980396488}
   - component: {fileID: 6283648232834227979}
   - component: {fileID: 1240163774159379910}
+  - component: {fileID: 7606339838464382367}
   m_Layer: 0
-  m_Name: Waddle Dee BnW transparent
-  m_TagString: Enemy
+  m_Name: WaddleDeeOfMultiplied
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,22 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2703739373980396484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2703739373980396482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 821e7d34d0a2acb47a512f6e9998edd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  durationOfExplosion: 1
-  explosionVFX: {fileID: 757001788745384297, guid: 551cde6209390334aab3861941d6e721, type: 3}
-  IsCollide: 0
-  scoreValue: 10
 --- !u!50 &2703739373980396489
 Rigidbody2D:
   serializedVersion: 4
@@ -362,3 +346,19 @@ PolygonCollider2D:
       - {x: -0.8566667, y: -1.4866667}
       - {x: -0.7033334, y: -1.4666667}
       - {x: -0.5833334, y: -1.44}
+--- !u!114 &7606339838464382367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2703739373980396482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bed370262d4e14fa689a2eb492dbd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationOfExplosion: 1
+  explosionVFX: {fileID: 757001788745384297, guid: 551cde6209390334aab3861941d6e721, type: 3}
+  IsCollide: 0
+  scoreValue: 5

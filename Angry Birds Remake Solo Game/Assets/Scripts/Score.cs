@@ -1,27 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 using UnityEditor.UI;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Score : MonoBehaviour
 {
-    /*TextMeshProUGUI scoreText;
-    GameSessions myGameSessions; 
+    TextMeshProUGUI scoreText;
+    GameSession myGameSessions;
 
     void Start()
     {
         scoreText = GetComponent<TextMeshProUGUI>();
-        myGameSessions = FindObjectOfType<GameSessions>();
+        myGameSessions = FindObjectOfType<GameSession>();
     }
 
     void Update()
     {
         scoreText.text = myGameSessions.GetScore().ToString();
-    }*/
+    }
 
-    public static Score instance;
+    /*public static Score instance;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highscoreText;
@@ -76,6 +77,6 @@ public class Score : MonoBehaviour
     public void ResetHighScore()
     {
         // on home page reset highscore
-    }
+    }*/
 
 }
