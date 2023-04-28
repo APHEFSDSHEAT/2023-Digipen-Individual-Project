@@ -139,7 +139,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6333334, y: 3.12}
+    oldSize: {x: 2.725, y: 2.34}
     newSize: {x: 5.45, y: 4.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -251,7 +251,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6333334, y: 3.12}
+    oldSize: {x: 2.725, y: 2.34}
     newSize: {x: 5.45, y: 4.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -359,6 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durationOfExplosion: 1
-  explosionVFX: {fileID: 757001788745384297, guid: 551cde6209390334aab3861941d6e721, type: 3}
+  explosionVFX: {fileID: 9038793468508407967, guid: c1e9633f118c58a4eba9ae40f21b493f, type: 3}
   IsCollide: 0
   scoreValue: 5
