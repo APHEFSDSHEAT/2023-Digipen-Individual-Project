@@ -711,10 +711,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 485558367264604794, guid: 913c825c361180947870b298d292d1ae, type: 3}
-      propertyPath: delayInSeconds
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 485558367264604795, guid: 913c825c361180947870b298d292d1ae, type: 3}
       propertyPath: m_Name
       value: Level
@@ -1060,10 +1056,6 @@ PrefabInstance:
     - target: {fileID: 4877865449298548863, guid: cd84e74fb0bd34d49b7cf495b253cf63, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4877865449298548864, guid: cd84e74fb0bd34d49b7cf495b253cf63, type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4877865449298548867, guid: cd84e74fb0bd34d49b7cf495b253cf63, type: 3}
       propertyPath: m_Name

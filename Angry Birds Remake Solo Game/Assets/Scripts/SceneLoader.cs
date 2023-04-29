@@ -10,6 +10,14 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(0);
         //FindObjectOfType<GameStatus>().ResetGame();
     }
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+    public void LoadGameScene()
+    {
+        SceneManager.LoadScene("Level1");
+    }
 
     public void LoadNextScene()
     {

@@ -43,4 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc7fb917daeb7f4f8886af54d7b80b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfEnemies: 0
   breakableBlocks: 0
+  delayInSeconds: 2

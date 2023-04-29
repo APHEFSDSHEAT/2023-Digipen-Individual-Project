@@ -352,10 +352,16 @@ MonoBehaviour:
   idlePosition: {fileID: 7231835021918699696}
   currentPosition: {x: 0, y: 0, z: 0}
   maxLength: 2.2
-  bottomBoundary: -3
-  birdPrefab: {fileID: 6275382903282484183, guid: 6e2526817f807644bb7f4be478ef8b8b, type: 3}
-  birdPositionOffset: 0
+  bottomBoundary: -4
   force: 10
+  birdPositionOffset: 0
+  birdPrefab: {fileID: 6275382903282484183, guid: 6e2526817f807644bb7f4be478ef8b8b, type: 3}
+  maxBirds: 4
+  delayInSeconds: 3.5
+  delayInSeconds2: 0.5
+  explosionPosition: {x: 0.29128918, y: -2.1445513, z: 0}
+  explosionPosition2: {x: 6.1, y: -2.38, z: 0}
+  explosionNDeathVFX: {fileID: 8054797154866322675, guid: 1cdca27b86107b34196d60175d137f84, type: 3}
 --- !u!61 &7231835020558360578
 BoxCollider2D:
   m_ObjectHideFlags: 0

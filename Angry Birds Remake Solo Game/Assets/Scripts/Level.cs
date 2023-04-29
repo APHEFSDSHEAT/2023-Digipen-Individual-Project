@@ -5,17 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
-    [SerializeField] int numberOfEnemies;
+    [SerializeField] public int numberOfEnemies;
     [SerializeField] int breakableBlocks;
     [SerializeField] float delayInSeconds = 3.5f;
 
-    public void CountBreakableBlocks()
-    {
-        breakableBlocks = breakableBlocks + 1;
-        // Two Shortcuts of code for the above
-        //breakableBlocks += 1;
-        //breakableBlocks++;
-    }
+    
     public void CountEnemies()
     {
         numberOfEnemies = numberOfEnemies + 1;
@@ -29,6 +23,16 @@ public class Level : MonoBehaviour
             LoadTheNextScene();
             //FindObjectOfType<SceneLoader>().LoadNextScene();
         }
+    }
+
+    // COUNTING BLOCKS
+
+    public void CountBreakableBlocks()
+    {
+        breakableBlocks = breakableBlocks + 1;
+        // Two Shortcuts of code for the above
+        //breakableBlocks += 1;
+        //breakableBlocks++;
     }
     public void blockDestroyed()
     {
@@ -44,7 +48,7 @@ public class Level : MonoBehaviour
         StartCoroutine(WaitAndLoad());
     }
 
-    private IEnumerator WaitAndLoad() // MAKE THIS HAPPEN WHEN ENEMY ARE GONE NOT BLOCKS
+    private IEnumerator WaitAndLoad() 
     {
         yield return new WaitForSeconds(delayInSeconds);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

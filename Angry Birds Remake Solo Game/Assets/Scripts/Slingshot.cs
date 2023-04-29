@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Slingshot : MonoBehaviour
 {
+    [Header("Slingshot Things")] 
     public LineRenderer[] lineRenderers;
     public Transform[] stripPositions;
     public Transform centre;
@@ -14,21 +15,31 @@ public class Slingshot : MonoBehaviour
     public Vector3 currentPosition;
 
     public float maxLength;
-
     public float bottomBoundary;
+    public float force;
 
     bool isMouseDown;
 
-    public GameObject birdPrefab;
-
+    [Header("Bird")]
     public float birdPositionOffset;
+
+    public GameObject birdPrefab;
 
     Rigidbody2D bird;
     Collider2D birdCollider;
 
-    public float force;
+    [Header("My Additions")]
+    [SerializeField] public int maxBirds = 5;
+    [SerializeField] float delayInSeconds = 4f;
+    [SerializeField] float delayInSeconds2 = 1f;
 
-    
+
+    [SerializeField] Vector3 explosionPosition;
+    [SerializeField] Vector3 explosionPosition2;
+
+    [SerializeField] GameObject explosionNDeathVFX;
+    float durationOfExplosion = 1.5f;
+
     void Start()
     {
         lineRenderers[0].positionCount = 2;
@@ -88,6 +99,7 @@ public class Slingshot : MonoBehaviour
     {
         isMouseDown = false;
         Shoot();
+        WhenThereAreNoMoreBirds();
     }
 
     void Shoot()
@@ -100,6 +112,8 @@ public class Slingshot : MonoBehaviour
         bird = null;
         birdCollider = null;
         Invoke("CreateBird", 2 );
+
+        maxBirds--;
 
         if (birdCollider)
         {
@@ -133,6 +147,29 @@ public class Slingshot : MonoBehaviour
     {
         vector.y = Mathf.Clamp(vector.y, bottomBoundary, 1000);
         return vector;
+    }
+
+    
+    public void WhenThereAreNoMoreBirds()
+    {
+        if (maxBirds <= 0 && FindObjectOfType<Level>().numberOfEnemies > 0)
+        {
+            StartCoroutine(WaitJustASec());
+        }
+        
+    }
+
+    private IEnumerator WaitJustASec()
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+        GameObject explosion = Instantiate(explosionNDeathVFX, transform.position, transform.rotation);
+        GameObject explosion2 = Instantiate(explosionNDeathVFX, explosionPosition, transform.rotation);
+        GameObject explosion3 = Instantiate(explosionNDeathVFX, explosionPosition2, transform.rotation);
+        Destroy(explosion, durationOfExplosion);
+        Destroy(explosion2, durationOfExplosion);
+        Destroy(explosion3, durationOfExplosion);
+        yield return new WaitForSeconds(delayInSeconds2);
+        FindObjectOfType<SceneLoader>().LoadGameOver();
     }
 
 }

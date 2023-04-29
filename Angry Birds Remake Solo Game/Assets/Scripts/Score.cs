@@ -22,6 +22,8 @@ public class Score : MonoBehaviour
         scoreText.text = myGameSessions.GetScore().ToString();
     }
 
+   
+
     /*public static Score instance;
 
     public TextMeshProUGUI scoreText;
