@@ -835,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
       propertyPath: lines.Array.data[0]
-      value: Congratualtions!
+      value: Congratulations!
       objectReference: {fileID: 0}
     - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
       propertyPath: lines.Array.data[1]
