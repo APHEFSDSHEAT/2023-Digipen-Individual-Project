@@ -149,7 +149,10 @@ public class Slingshot : MonoBehaviour
         return vector;
     }
 
-    
+    public int GetBirds()
+    {
+        return maxBirds;
+    }
     public void WhenThereAreNoMoreBirds()
     {
         if (maxBirds <= 0 && FindObjectOfType<Level>().numberOfEnemies > 0)
