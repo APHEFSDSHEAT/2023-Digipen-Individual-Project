@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         //FindObjectOfType<GameStatus>().ResetGame();
+        FindObjectOfType<GameSession>().score = 0;
     }
     public void LoadTutorial()
     {

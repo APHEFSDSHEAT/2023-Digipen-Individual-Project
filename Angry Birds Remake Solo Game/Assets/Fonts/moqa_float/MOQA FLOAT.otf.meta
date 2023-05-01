@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 02b775f3b04192849a28144d73fad581
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - MOQA FLOAT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5d15ebf60097dd748ae71a5823fb1750, type: 3}
+  - {fileID: 12800000, guid: 2edba20c492ee7a4f89b444042675b61, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

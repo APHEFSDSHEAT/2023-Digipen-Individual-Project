@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = myGameSessions.GetScore().ToString();
+        scoreText.text = myGameSessions.GetScore().ToString(); 
     }
 
    

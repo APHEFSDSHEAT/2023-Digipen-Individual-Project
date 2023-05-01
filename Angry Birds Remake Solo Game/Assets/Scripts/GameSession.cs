@@ -27,12 +27,12 @@ public class GameSession : MonoBehaviour
 
     public void AddToScore(int scoreValue)
     {
-        score += scoreValue;
+        score += scoreValue; Debug.Log("gamesession");
     }
 
-    public int GetScore()
+    public int GetScore() 
     {
-        return score;
+        return score; 
     }
 
     public void ResetGame()
