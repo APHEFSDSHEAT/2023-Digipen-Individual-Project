@@ -27,7 +27,7 @@ public class GameSession : MonoBehaviour
 
     public void AddToScore(int scoreValue)
     {
-        score += scoreValue; Debug.Log("gamesession");
+        score += scoreValue; 
     }
 
     public int GetScore() 

@@ -46,3 +46,8 @@ MonoBehaviour:
   numberOfEnemies: 0
   breakableBlocks: 0
   delayInSeconds: 2
+  delayInSeconds2: 4
+  delayInSeconds3: 1
+  explosionPosition: {x: -4.97, y: -0.02, z: 0}
+  explosionPosition2: {x: 4.42, y: -0.02, z: 0}
+  explosionNDeathVFX: {fileID: 8054797154866322675, guid: 1cdca27b86107b34196d60175d137f84, type: 3}

@@ -31,7 +31,7 @@ public class Slingshot : MonoBehaviour
     [Header("My Additions")]
     [SerializeField] public int maxBirds = 5;
     [SerializeField] float delayInSeconds = 4f;
-    [SerializeField] float delayInSeconds2 = 1f;
+    [SerializeField] float delayInSeconds2 = 1.4f;
 
 
     [SerializeField] Vector3 explosionPosition;
