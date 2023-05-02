@@ -148,4 +148,4 @@ MonoBehaviour:
   blockDestroyVFX: {fileID: 9038793468508407967, guid: 9c1468bd87c7048488ade6045bb052c4, type: 3}
   blockHitSprites:
   - {fileID: 21300000, guid: 2c487320caad32a4797eb9258bb951a4, type: 3}
-  scoreValue: 5
+  scoreValue: 2

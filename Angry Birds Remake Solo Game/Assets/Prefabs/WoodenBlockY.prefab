@@ -147,4 +147,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockDestroyVFX: {fileID: 9038793468508407967, guid: 503007f189acdd744bbb6a045aba8eff, type: 3}
   blockHitSprites: []
-  scoreValue: 5
+  scoreValue: 1

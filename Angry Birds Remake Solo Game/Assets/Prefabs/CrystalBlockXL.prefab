@@ -149,4 +149,4 @@ MonoBehaviour:
   blockHitSprites:
   - {fileID: 21300000, guid: f2c9893d9f3d2484aa4296c5c50dc3f2, type: 3}
   - {fileID: 21300000, guid: cced5230e8873234290d9434662bbc5a, type: 3}
-  scoreValue: 5
+  scoreValue: 3

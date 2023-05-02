@@ -123,7 +123,7 @@ MonoBehaviour:
   blockHitSprites:
   - {fileID: 21300000, guid: 2e4d2209a11c8364f8d531c386643236, type: 3}
   - {fileID: 21300000, guid: e53b7868f0b08c84f8843659eccd53d5, type: 3}
-  scoreValue: 5
+  scoreValue: 3
 --- !u!60 &7038571423782942480
 PolygonCollider2D:
   m_ObjectHideFlags: 0

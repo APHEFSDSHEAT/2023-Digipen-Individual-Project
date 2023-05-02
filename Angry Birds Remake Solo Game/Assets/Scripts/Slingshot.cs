@@ -40,6 +40,8 @@ public class Slingshot : MonoBehaviour
     [SerializeField] GameObject explosionNDeathVFX;
     float durationOfExplosion = 1.5f;
 
+    bool allowedToShoot = true;
+
     void Start()
     {
         lineRenderers[0].positionCount = 2;
@@ -98,7 +100,11 @@ public class Slingshot : MonoBehaviour
     private void OnMouseUp()
     {
         isMouseDown = false;
-        Shoot();
+        if(allowedToShoot == true)
+        {
+            Shoot();
+        }
+        
         WhenThereAreNoMoreBirds();
     }
 
@@ -164,6 +170,7 @@ public class Slingshot : MonoBehaviour
 
     private IEnumerator WaitJustASec()
     {
+        allowedToShoot = false;
         yield return new WaitForSeconds(delayInSeconds);
         GameObject explosion = Instantiate(explosionNDeathVFX, transform.position, transform.rotation);
         GameObject explosion2 = Instantiate(explosionNDeathVFX, explosionPosition, transform.rotation);
