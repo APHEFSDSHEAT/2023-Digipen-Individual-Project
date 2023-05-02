@@ -3218,12 +3218,65 @@ PrefabInstance:
     m_TransformParent: {fileID: 1097848613}
     m_Modifications:
     - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
       propertyPath: lines.Array.data[2]
-      value: Take back what they took from us!
+      value: Your goal is to eliminate all remaining Waddle-Dees.
       objectReference: {fileID: 0}
     - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
       propertyPath: lines.Array.data[3]
-      value: ...what? Nevermind.
+      value: They have hunkered down in fortifications.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: Some structures may take multiple hits to completely break.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: Some fortifications may also come with barbed wire,
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: anything that comes in contact with it will perish.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: One thing to note, some enemies may have deceiving tactics to make you
+        waste warriors.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: Click and drag Kirby as if it were a slingshot to launch it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: Though warriors are scarce these days.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[10]
+      value: You will have a limited amount to deal with them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[11]
+      value: Make every shot worth it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[12]
+      value: If you fail to defeat all Waddle-Dees,
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[13]
+      value: everything will literally explode.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[14]
+      value: Good luck! - And more importantly, have fun!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467645342825677665, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
+      propertyPath: lines.Array.data[15]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6467645342825677666, guid: b2540ccef8c11e6469f67a612622ecf5, type: 3}
       propertyPath: m_Pivot.x
