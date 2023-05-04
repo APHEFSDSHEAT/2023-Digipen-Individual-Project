@@ -43,6 +43,10 @@ public class Slingshot : MonoBehaviour
     [SerializeField] Vector3 sparklePosition;
 
     bool allowedToShoot = true;
+    /*[Header("sound")]
+    [SerializeField] AudioClip launchSFX;
+    [SerializeField][Range(0, 1)] float launchSFXVolume = 0.75f;
+    */
 
     void Start()
     {
@@ -122,7 +126,9 @@ public class Slingshot : MonoBehaviour
         Invoke("CreateBird", 2 );
 
         maxBirds--;
-           
+
+        //AudioSource.PlayClipAtPoint(launchSFX, Camera.main.transform.position, launchSFXVolume);
+
         if (birdCollider)
         {
             birdCollider.enabled = true; 
