@@ -18,7 +18,7 @@ public class Slingshot : MonoBehaviour
     public float bottomBoundary;
     public float force;
 
-    bool isMouseDown;
+    public bool isMouseDown; //originally private
 
     [Header("Bird")]
     public float birdPositionOffset;
@@ -39,6 +39,8 @@ public class Slingshot : MonoBehaviour
 
     [SerializeField] GameObject explosionNDeathVFX;
     float durationOfExplosion = 1.5f;
+    [SerializeField] public GameObject sparkle;
+    [SerializeField] Vector3 sparklePosition;
 
     bool allowedToShoot = true;
 
@@ -92,7 +94,7 @@ public class Slingshot : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    private void OnMouseDown() 
     {
         isMouseDown = true; 
     }
@@ -120,7 +122,7 @@ public class Slingshot : MonoBehaviour
         Invoke("CreateBird", 2 );
 
         maxBirds--;
-
+           
         if (birdCollider)
         {
             birdCollider.enabled = true; 

@@ -359,6 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durationOfExplosion: 1
-  explosionVFX: {fileID: 9038793468508407967, guid: c1e9633f118c58a4eba9ae40f21b493f, type: 3}
+  explosionVFX: {fileID: 8054797154866322675, guid: 0a5d9cb230e7db748a61e973dd209957, type: 3}
   IsCollide: 0
   scoreValue: 5

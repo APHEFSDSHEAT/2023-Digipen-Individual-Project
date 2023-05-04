@@ -12,16 +12,16 @@ public class Level : MonoBehaviour
 
     [Header("Variables")]
     [SerializeField] float delayInSeconds = 3.5f;
-    float delayInSeconds2 = 4f;
-    float delayInSeconds3 = 1f;
-    float durationOfExplosion = 1.5f;
+    //float delayInSeconds2 = 4f;
+    //float delayInSeconds3 = 1f;
+    //float durationOfExplosion = 1.5f;
 
-    [Header("Positions")]
-    Vector3 explosionPosition;
-    Vector3 explosionPosition2;
+    //[Header("Positions")]
+    //Vector3 explosionPosition;
+    //Vector3 explosionPosition2;
 
-    [Header("GameObjects")]
-    GameObject explosionNDeathVFX;
+    //[Header("GameObjects")]
+    //GameObject explosionNDeathVFX;
 
     public void CountEnemies()
     {

@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doYouMultiply: 1
   durationOfExplosion: 1
-  explosionVFX: {fileID: 757001788745384297, guid: f7d29f4db6ccd4e4b96daf25a4426dcb, type: 3}
+  explosionVFX: {fileID: 8054797154866322675, guid: 9b9d24a5a24291f42b9dd6ff0af3b08b, type: 3}
   waddleDee: {fileID: 2703739373980396482, guid: 67dc7371706df1547baa7c6aa899d995, type: 3}
   waddlePosition: {x: 5, y: 3, z: 0}
   waddlePosition2: {x: 2, y: 3, z: 0}
