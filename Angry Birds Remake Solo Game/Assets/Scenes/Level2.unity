@@ -1914,6 +1914,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 21263298654444517, guid: 9731f5e93a97d5c4e94f5f57f46de5fe, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 21263298654444517, guid: 9731f5e93a97d5c4e94f5f57f46de5fe, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 21263298654444517, guid: 9731f5e93a97d5c4e94f5f57f46de5fe, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5727896307993251544, guid: 9731f5e93a97d5c4e94f5f57f46de5fe, type: 3}
       propertyPath: m_RootOrder
       value: 1

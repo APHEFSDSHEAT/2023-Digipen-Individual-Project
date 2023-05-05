@@ -149,3 +149,4 @@ MonoBehaviour:
   blockHitSprites:
   - {fileID: 21300000, guid: 2c487320caad32a4797eb9258bb951a4, type: 3}
   scoreValue: 2
+  deathSFX: {fileID: 8300000, guid: d786689f8262e544fafad59205d44e47, type: 3}

@@ -101,12 +101,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doYouMultiply: 0
-  durationOfExplosion: 1
-  explosionVFX: {fileID: 8054797154866322675, guid: 0a5d9cb230e7db748a61e973dd209957, type: 3}
+  IsCollide: 0
   waddleDee: {fileID: 0}
   waddlePosition: {x: 0, y: 0, z: 0}
   waddlePosition2: {x: 0, y: 0, z: 0}
-  IsCollide: 0
+  deathSFX: {fileID: 8300000, guid: d32531cc3fb46e0409bf01d0c646d95a, type: 3}
+  deathSFXVolume: 0.75
+  durationOfExplosion: 1
+  explosionVFX: {fileID: 8054797154866322675, guid: 0a5d9cb230e7db748a61e973dd209957, type: 3}
   scoreValue: 10
 --- !u!50 &2703739373980396489
 Rigidbody2D:

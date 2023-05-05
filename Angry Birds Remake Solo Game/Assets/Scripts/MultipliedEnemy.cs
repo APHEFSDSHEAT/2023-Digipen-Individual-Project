@@ -9,6 +9,8 @@ public class MultipliedEnemy : MonoBehaviour
     [SerializeField] float durationOfExplosion = 1f;
     [SerializeField] GameObject explosionVFX;
 
+    [Header("sound")]
+    [SerializeField] AudioClip deathSFX;
 
 
 
@@ -47,6 +49,7 @@ public class MultipliedEnemy : MonoBehaviour
     {
         if (IsCollide == true)
         {
+            AudioManager.instance.PlayClip(deathSFX);
             FindObjectOfType<GameSession>().AddToScore(scoreValue);
             //Score.instance.AddPoint(points);
             GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);

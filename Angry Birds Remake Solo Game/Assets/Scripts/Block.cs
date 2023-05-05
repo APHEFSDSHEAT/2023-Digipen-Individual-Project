@@ -13,6 +13,10 @@ public class Block : MonoBehaviour
     //public int points = 5;
     [SerializeField] int scoreValue = 10;
 
+    [Header("Sound")]
+    [SerializeField] AudioClip deathSFX;
+
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -43,17 +47,16 @@ public class Block : MonoBehaviour
     }
     private void ShowNextHitSprite()
     {
+        AudioManager.instance.PlayClip(deathSFX);
         int spriteIndex = timesHit - 1;
         GetComponent<SpriteRenderer>().sprite = blockHitSprites[spriteIndex];
     }
     private void DestroyBlock()
     {
-        //the line below is trying to find the script
-        //Score.instance.AddPoint(points);
+        AudioManager.instance.PlayClip(deathSFX);
         FindObjectOfType<GameSession>().AddToScore(scoreValue);
         levelScript.blockDestroyed();
         TriggerBlockBreakVFX();
-        // Destroy yourself
         Destroy(gameObject);
     }
     private void TriggerBlockBreakVFX()

@@ -15,10 +15,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] Vector3 waddlePosition;
     [SerializeField] Vector3 waddlePosition2;
 
-    /*[Header("sound")]
+    [Header("sound")]
     [SerializeField] AudioClip deathSFX;
-    [SerializeField][Range(0, 1)] float deathSFXVolume = 0.75f;
-    */
+    //[SerializeField][Range(0, 1)] float deathSFXVolume = 0.75f;
+    
 
 
     [Header("variables")]
@@ -55,7 +55,8 @@ public class Enemy : MonoBehaviour
     {
         if (IsCollide == true && doYouMultiply ==false)
         {
-            //AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
+            AudioManagerEnemy.instance.PlayClip(deathSFX);
+            //AudioSource.PlayClipAtPoint(deathSFX, transform.position, deathSFXVolume);
             FindObjectOfType<GameSession>().AddToScore(scoreValue);
             //Score.instance.AddPoint(points);
             GameObject explosion = Instantiate(explosionVFX, transform.position, transform.rotation);
@@ -68,7 +69,7 @@ public class Enemy : MonoBehaviour
     {
         if (IsCollide == true && doYouMultiply == true)
         {
-            //AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
+            AudioManagerEnemy.instance.PlayClip(deathSFX);
             GameObject moreMultipliedWaddleDee = Instantiate(waddleDee, waddlePosition, transform.rotation);
             GameObject moreMultipliedWaddleDee2 = Instantiate(waddleDee, waddlePosition2, transform.rotation);
             FindObjectOfType<GameSession>().AddToScore(scoreValue);

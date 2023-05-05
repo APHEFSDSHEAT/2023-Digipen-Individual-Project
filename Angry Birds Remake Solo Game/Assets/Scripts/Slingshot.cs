@@ -48,6 +48,9 @@ public class Slingshot : MonoBehaviour
     [SerializeField][Range(0, 1)] float launchSFXVolume = 0.75f;
     */
 
+    [Header("sound")]
+    [SerializeField] AudioClip launchSFX;
+
     void Start()
     {
         lineRenderers[0].positionCount = 2;
@@ -116,6 +119,7 @@ public class Slingshot : MonoBehaviour
 
     void Shoot()
     {
+        AudioManagerSlingshot.instance.PlayClip(launchSFX);
         bird.isKinematic = false;
         Vector3 birdForce = (currentPosition - centre.position) * force * -1;
         bird.velocity = birdForce;
