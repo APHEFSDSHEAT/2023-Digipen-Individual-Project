@@ -532,9 +532,10 @@ MonoBehaviour:
   explosionPosition: {x: 0.29128918, y: 0.04, z: 0}
   explosionPosition2: {x: 6.25, y: 0.04, z: 0}
   explosionNDeathVFX: {fileID: 8054797154866322675, guid: 1cdca27b86107b34196d60175d137f84, type: 3}
-  sparkle: {fileID: 8054797154866322675, guid: b9f1bb05062d74c4b82dcb8332bebb37, type: 3}
+  sparkle: {fileID: 8054797154866322675, guid: 9731f5e93a97d5c4e94f5f57f46de5fe, type: 3}
   sparklePosition: {x: 0, y: 0, z: 0}
-  launchSFX: {fileID: 8300000, guid: 391db81499f51d047920b4d2c3f3a3cb, type: 3}
+  launchSFX: {fileID: 8300000, guid: 07eea463814895b49b8db0b0041ebd64, type: 3}
+  explosionSFX: {fileID: 8300000, guid: 4e8fa0891d0e64349b2c3177b060e664, type: 3}
 --- !u!61 &7231835020558360578
 BoxCollider2D:
   m_ObjectHideFlags: 0

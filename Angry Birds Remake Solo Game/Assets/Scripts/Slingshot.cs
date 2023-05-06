@@ -50,6 +50,7 @@ public class Slingshot : MonoBehaviour
 
     [Header("sound")]
     [SerializeField] AudioClip launchSFX;
+    [SerializeField] AudioClip explosionSFX;
 
     void Start()
     {
@@ -184,6 +185,7 @@ public class Slingshot : MonoBehaviour
     {
         allowedToShoot = false;
         yield return new WaitForSeconds(delayInSeconds);
+        AudioManagerSlingshot.instance.PlayClip(explosionSFX);
         GameObject explosion = Instantiate(explosionNDeathVFX, transform.position, transform.rotation);
         GameObject explosion2 = Instantiate(explosionNDeathVFX, explosionPosition, transform.rotation);
         GameObject explosion3 = Instantiate(explosionNDeathVFX, explosionPosition2, transform.rotation);
