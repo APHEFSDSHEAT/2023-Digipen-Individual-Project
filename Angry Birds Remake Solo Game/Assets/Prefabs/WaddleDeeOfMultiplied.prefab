@@ -362,4 +362,4 @@ MonoBehaviour:
   explosionVFX: {fileID: 8054797154866322675, guid: 0a5d9cb230e7db748a61e973dd209957, type: 3}
   deathSFX: {fileID: 8300000, guid: a0aa445c436be9b4980598a1adf0e412, type: 3}
   IsCollide: 0
-  scoreValue: 5
+  scoreValue: 0

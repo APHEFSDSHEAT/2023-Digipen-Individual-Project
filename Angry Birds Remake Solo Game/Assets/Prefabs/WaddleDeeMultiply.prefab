@@ -108,7 +108,7 @@ MonoBehaviour:
   deathSFX: {fileID: 8300000, guid: a0aa445c436be9b4980598a1adf0e412, type: 3}
   durationOfExplosion: 1
   explosionVFX: {fileID: 8054797154866322675, guid: 9b9d24a5a24291f42b9dd6ff0af3b08b, type: 3}
-  scoreValue: 5
+  scoreValue: 15
 --- !u!50 &2703739373980396489
 Rigidbody2D:
   serializedVersion: 4
