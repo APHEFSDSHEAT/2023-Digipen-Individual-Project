@@ -1036,6 +1036,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 21263298654444517, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 21263298654444517, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.67058825
+      objectReference: {fileID: 0}
     - target: {fileID: 5727896307993251544, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1093,6 +1101,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 21263298654444517, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21263298654444517, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.4470588
+      objectReference: {fileID: 0}
+    - target: {fileID: 21263298654444517, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.6698872
+      objectReference: {fileID: 0}
     - target: {fileID: 5727896307993251544, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1395,6 +1415,57 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: f77ee282356d6ee4296b1be315296294, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e23d5d560229224b917fdfbc3d8a221, type: 3}
+--- !u!1 &2114008641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2114008643}
+  - component: {fileID: 2114008642}
+  m_Layer: 0
+  m_Name: WinVFXGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2114008642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114008641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5fde04cb57f5ea45a3221ee64c85dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sFX: {fileID: 8054797154866322675, guid: 3c17c4618ce8ee04e956e3730ac367ea, type: 3}
+  sFX2: {fileID: 8054797154866322675, guid: e9e4ee20c415d6a46b395c7f9985a3cc, type: 3}
+  sFX3: {fileID: 8054797154866322675, guid: 7d5e7f099d7f6144aa966e0a921645e7, type: 3}
+  sFX4: {fileID: 8054797154866322675, guid: 51d733c563d001141a87875eafb3ce1d, type: 3}
+  sFXPositionLeft: {x: 5.083788, y: 0.15347286, z: 0}
+  sFXPositionRight: {x: -5.0454197, y: 0.07673643, z: 0}
+  delayInSeconds: 2.5
+  durationOfExplosion: 5
+--- !u!4 &2114008643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114008641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130142301
 GameObject:
   m_ObjectHideFlags: 0
